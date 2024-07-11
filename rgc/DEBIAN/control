@@ -1,6 +1,0 @@
-Package: rgc
-Version: 1.0
-Architecture: all
-Maintainer: Your Name <your.email@example.com>
-Depends: mercurial
-Description: rgc(risky-git-command) allows you to undo git commands

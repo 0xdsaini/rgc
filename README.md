@@ -28,3 +28,6 @@ Messed it?
 **3. Why not use git under the hood too instead of hg?**
 
 **Ans.** Originally, the idea was to initialize a `.git` repo in parent directory but then git(in parent-dir) was considering inside .git repo as submodule and left no way to track internal files of inner `.git` repo. Have been using `hg` since then. Can change to `git` in newer versions once it is found git can work with another git repo inside, the way we want. For now, `hg` is fitting the bill very well.
+
+## Caution/Bug:
+Changes never added to git, and untracked/ignored files are still at risk of deletion. This is a fatal bug. Please check issue: https://github.com/0xdsaini/rgc/issues/1 and proceed with caution.
